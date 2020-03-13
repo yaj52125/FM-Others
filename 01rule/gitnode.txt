@@ -1,0 +1,26 @@
+Merge: bugfix to develop
+
+step1:git checkout develop
+step2:git pull
+step3:git rebase develop
+step4:git add conflict file
+step5:git rebase --continue
+step6:git push
+step7:merge
+
+
+end
+
+
+----delete remote branch
+
+git fetch --prune
+
+------------------------------
+--reset all branch use remote branch
+git fetch --all --prune
+git reset --hard origin/release/v11.1
+
+
+
+
