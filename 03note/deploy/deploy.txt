@@ -1,0 +1,62 @@
+
+1. update modelmanagement.properties
+
+--------------------------------------------------------------------
+2.connect dfs-distdwp-rdp
+Private IP Address Type: Static
+Private IP Address: 10.10.24.10
+Public IP Address Type: Dynamic
+Public FQDN: dfs-distdwp.eastus.cloudapp.azure.com 
+Public Alias Record Set: dfs-distdwp.azure.landmarksoftware.io
+
+Username: azureuser
+Password: ohx7aeghu3vei3Tu
+---------------------------------------------------------------------
+3.update project/deploy
+3.1 templates/_deployment.tpl
+add 
+[          securityContext:
+            privileged: true   
+]
+3.2 chart.yaml
+3.3 values.yaml
+
+--------------------------------------------------------------------
+4.update project/src/main/docker
+4.1 add entry.sh under script/
+4.2 update Dockerfile
+
+
+-------------------------------------------------------------------
+5.add deploy.sh under project/ 
+
+
+------------------------------------------------------------------
+6.login MobaXterm
+connection linux
+ip:10.134.199.185
+Password:oecpassword
+
+------------------------------------------------------------------
+7.
+
+1. chmod +x deploy.sh
+2. ./deploy.sh
+3. docker images  //check image status
+---
+4. docker run -it --rm -v $(pwd):/root/app distservices-docker.repo.openearth.io/distarch/dpcli-distdwp:2.0  //run into dipcli docker
+5. kubectl get pods -n dfs-dev  //check service list
+6. helm del  modelmanager  --namespace=dfs-dev //remove old service
+7. cd into ./deploy.sh dir
+/deploy service
+8. helm install modelmanager deploy/modelmanager --version 12.0 --namespace dfs-dev  --set global.env.production=false,global.cluster.hosts=distdwp.azure.landmarksoftware.io,global.cloud.vendor=azure
+9. kubectl get pods -n dfs-dev
+
+kubectl exec -it modelmanager-66b747b557-gb5sd -n dfs-dev -- bash
+
+10. mongodataurl:https://mongoui.distdwp.azure.landmarksoftware.io/db/ModelManagementInfo
+
+helm del  modelmanager  --namespace=dfs-dev 
+helm install modelmanager deploy/modelmanager --version 12.0 --namespace dfs-dev  --set global.env.production=false,global.cluster.hosts=distdwp.azure.landmarksoftware.io,global.cloud.vendor=azure
+kubectl get pods -n dfs-dev
+
