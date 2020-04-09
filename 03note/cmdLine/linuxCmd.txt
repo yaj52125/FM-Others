@@ -1,0 +1,33 @@
+system
+-----------------------------------
+date               --show sys date
+cal [year]         --calenday year
+
+==========================================
+
+file/dir
+-----------------------------------
+cd /home           --goto '/home' dir
+cd ..              --back
+cd ../..           --back back
+cd -               --return previous dir
+ls                 --list curr dirs
+pwd                --show curr dir
+ls -F              --show dir files
+ls -l              --show dirs/files details info
+ls -a              --show hide files
+mkdir dir1 (dir2)  --create dir1 (dir2)
+rmdir dir2         --remove dir2
+rm -rf dir2        --remove dir2 and content
+cp file1 file2     --copy file1 to file2
+rm -f file1        --remove file1
+mv dir1 dir2       --move dir1 to dir2
+
+==========================================
+
+file process
+--------------------------------------
+cat -n file1                   --mark file content line
+touch newfilename              --create a new file
+echo "Text" >  filename        --overwrite "Text" in filename
+echo "Text" >> filename        --append "Text" in filename

@@ -42,6 +42,7 @@ Password:oecpassword
 
 1. chmod +x deploy.sh
 2. ./deploy.sh
+2.1  source /etc/profile
 3. docker images  //check image status
 ---
 4. docker run -it --rm -v $(pwd):/root/app distservices-docker.repo.openearth.io/distarch/dpcli-distdwp:2.0  //run into dipcli docker

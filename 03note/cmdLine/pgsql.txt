@@ -1,0 +1,11 @@
+>cd ../PostgreSQL/12/bin
+>psql -U postgres db1
+>select version();          #show postgres version
+>\?                         #list all aviable command
+>\l                         #get db list
+>\dt                        #get table list
+>\c dbname                  #switch db
+>\d tablename               #show table ddl
+>\g                         #auto exuecuted the previous command
+>\h insert                  #show syntaxes
+>\e                         #open notepad insert previously executed
