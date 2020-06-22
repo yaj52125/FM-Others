@@ -1,0 +1,21 @@
+Local DB
+dfs_init_db_v0 : a empty schema of pdm
+dfs_init_db_v1 : add dfs tables
+
+
+# backup postgres db to sql file
+pg_dump -U postgres -h localhost dfs_init_db_v0 > C:\dfs_init_db_v0.sql
+
+
+# restore postgres db
+psql -U postgres -d test_v0 < C:\Users\H209982\Desktop\test01.sql
+
+# execute sql
+psql -h localhost -U postgres -d test_v0 -a -f C:\Users\H209982\Desktop\vdb\dfs_table_script.sql
+
+# dump data
+pg_dump -U postgres -a -t field dfs_init_db_v1 > C:\Users\H209982\Desktop\field_data.sql
+pg_dump -U postgres -a -t well dfs_init_db_v1 > C:\Users\H209982\Desktop\well_data.sql  
+
+# execute sql insert data
+psql -h localhost -U postgres -d test_db_v0 < C:\Users\H209982\Desktop\vdb\field_data.sql
