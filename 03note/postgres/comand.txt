@@ -15,7 +15,17 @@ psql -h localhost -U postgres -d test_v0 -a -f C:\Users\H209982\Desktop\vdb\dfs_
 
 # dump data
 pg_dump -U postgres -a -t field dfs_init_db_v1 > C:\Users\H209982\Desktop\field_data.sql
-pg_dump -U postgres -a -t well dfs_init_db_v1 > C:\Users\H209982\Desktop\well_data.sql  
+pg_dump -U postgres -a -t well dspdm_db > C:\Users\H209982\Desktop\well_data.sql  
 
 # execute sql insert data
-psql -h localhost -U postgres -d test_db_v0 < C:\Users\H209982\Desktop\vdb\field_data.sql
+psql -h localhost -U postgres -d dspdm_db < C:\Users\H209982\Desktop\well_data.sql
+
+#reset order
+--step1:alter sequence_id > max(sequence_id)
+ALTER SEQUENCE seq_well_prod_aggregate RESTART WITH 100000;
+--step2:update sequence_id start from 100000
+UPDATE well_prod_aggregate SET well_prod_aggregate_id=nextval('seq_well_prod_aggregate');
+--step3:alter sequence_id start with 1
+ALTER SEQUENCE seq_well_prod_aggregate RESTART WITH 1;
+--step4:update sequence_id start with 1
+UPDATE well_prod_aggregate SET well_prod_aggregate_id=nextval('seq_well_prod_aggregate');
