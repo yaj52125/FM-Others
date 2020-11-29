@@ -1,4 +1,9 @@
+https://ipecho.net/plain =  114.143.221.82
 
+User:   phoenix\dfsadmin
+Password:  LGCdfs123! 
+admin
+======================================================================
 1. update modelmanagement.properties
 
 --------------------------------------------------------------------
@@ -38,6 +43,12 @@ ip:10.134.199.185
 Password:oecpassword
 
 ------------------------------------------------------------------
+https://dfsdev-docker.repo.openearth.io
+username:qiank
+password:RedHat123!
+
+
+
 7.
 
 1. chmod +x deploy.sh
@@ -57,7 +68,170 @@ kubectl exec -it modelmanager-66b747b557-gb5sd -n dfs-dev -- bash
 
 10. mongodataurl:https://mongoui.distdwp.azure.landmarksoftware.io/db/ModelManagementInfo
 
-helm del  modelmanager  --namespace=dfs-dev 
-helm install modelmanager deploy/modelmanager --version 12.0 --namespace dfs-dev  --set global.env.production=false,global.cluster.hosts=distdwp.azure.landmarksoftware.io,global.cloud.vendor=azure
-kubectl get pods -n dfs-dev
+11.kubectl logs -n dfs-dev -c modelmanager  modelmanager-66b747b557-r8plk
+
+12. mount -t cifs -o username=azureuser,password=ohx7aeghu3vei3Tu //10.10.24.10/P7ModelFolder /P7
+
+========================================================================
+
+===================================================================
+on-promise
+10.134.15.100  user:dfsadmin, password:LGCdfs123!
+
+
+===================================================================
+C:\tibco\tss\10.3.1\tomcat\application-data\library
+=======================================================
+https://git.openearth.community/dspdm/dspdm-data-model 
+
+
+
+===============================
+http://tsordersprd/tsorders/iwexctfm.asp
+
+=================================
+Public ip: 40.84.140.1
+Private ip: 10.7.5.39
+User: azureuser
+Password: Qwerty12345%$#@!
+
+tiger2 pgadmin
+40.84.213.245
+
+
+=================================
+tiger2 dsis (vdb)
+https://dsdsow.tiger2.halsec.landmarksoftware.cloud/dsdataserver-console/faces/deployments.jsf
+
+
+python 2.7 need download 
+https://www.microsoft.com/en-us/download/details.aspx?id=44266
+=================================
+select well_name,production_status,prod_flow_rate,latitude,longitude from dswimdata.well
+
+select * from dswimdata.r_well_type
+
+
+
+C:\Program Files\DATADVANCE\pSeven-6.16.3>python .\scripts\create_block.py Test-New --icon C:\Users\H209982\Desktop\Test\icon.svg --description "add a new user block"
+
+
+
+===================================
+open user_block.py edit python
+
+=======================================
+
+
+connection postgres
+------------------
+
+1.
+
+docker run -it --rm  -v $(pwd):/root/app -e TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IlZSRnBjVF9PN0d2bHB4M0JnVDdCVENWZnJCLTlqMXVSU1pmd1BQOHhrSkEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGZzLXRva2VuLWs3Ym16Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRmcyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijg4ZWY5NmQyLTE2NjMtNDI3MC04ODdmLTg3ZDY4YzM4NjJmMSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZnM6ZGZzIn0.H9A0XyiwcZH7T00Pc1rX3C1r_uCGH2W_sA8wB5355wm9g1QKvevQ-h4vxTk8i2G5KC6KW6CZlUP4q90zac0abEd3fOfkNWzZ4n-a2HWareqvN6npezHLA68Qy6DCDqYJ-s4KMOQhte0YbYVIRUI8-eORTVclqy-fi0JEkIj-3r2cc7xyBMxDWMeOjiBEfoTowhi0iReeAd3FOGKVn7CAe5TgP7OZc8swbNtWkwhX6QAb7rN1oQqXIfwhK5BHGcLnTnCqOaL0qsdGuh3za8Nt19xGHbyFIX4W7n9Iwsb7_ztdjlF0ZMA-uFbh-hIrV9NnIxT4syWVhaFui1FvcdNOuy4CKP0HJQ1JAC4CKC8tXa0DCzbCcvXOmSsxXrG2N8UFvUKRgW4HCC6i8o9hrYyfLZLuz7P5-3shFvOUQjWxDNDLhWgzqUNyPXfi87oKGMLsRXIq0cz3_1hBLLmY_hVAKgG5Vdo6BFzLTL1bahlS_jZS2zMBJCiPjy5ijEjUnTeyw9uZEgrGVnoYbFbWOStyUA-w0MDuXQx1lMEAI9xGQrgnxLLL-7nwv_Y47hT9MkS63xed0wzF0_ItCxwDNqeBqnXH7SUB3xGIbqxcVv-mNp-KUbeGwj2qt8SQ0Brxu-jVS6QWjpzzXMbRAHDRdPFpSF_r4ctTPbwi5gOUqdVTCn0 distservices-docker-release.repo.openearth.io/distarch/dpcli-tiger3:3.1
+
+2.kubectl exec -it -n dfs-dev postgres-6484c6586b-ghdft bash
+
+3.
+postgres
+address:10.126.45.27:5432
+username:postgres
+password:postgres
+
+
+
+========================================
+connect sql server
+
+1.open docker
+docker run -it --rm  -v $(pwd):/root/app -e TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IlZSRnBjVF9PN0d2bHB4M0JnVDdCVENWZnJCLTlqMXVSU1pmd1BQOHhrSkEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkc3BkbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkc3BkbS10b2tlbi14aGJtcyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJkc3BkbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImEzMjIzMGNhLWFhNGQtNDMzNC05YTNhLTQ4YzMzZmFkN2YwYiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkc3BkbTpkc3BkbSJ9.PWWb9eaeor5NKLi2jxyx90UOU1SBAzJKmz4iMRmUe2UXTs_D3CQuSaYoD-moe8izay4mY5IkfOw_C6sl1EJ-4sDoP4QIAEOy2maOD4wUo9P2obhf9FndDonyMq8m4Qwb28I4k_X_BrQyfWkowKgMY3fSNgj7Kbt5gU_x7xm7kHrSh5UwfkycPW0e3WKHYAXZ6F9HfDEXYH9KAgBQLfvDQLlKil3UXBe3ltBpScAZIHtw5LDhSUURirKMcG5soRD3jJVFJy_Xq9qu8qScKcNH3gVXL3S9udoJ_F1bAgHmgR1h3q_1eCRfLAccxRVx8IotG__Osj58ViWIVuG5llRv1PzNFyvMxbqCJjjP1_yaD9VM75jS7Ja89Wv5wd15t3D_HqEHp__Qmsp-tOwkkmJkvyK_fa88-hwDjrfN1m9y_L87tWDLK1DIuA5-8KmNWrxe1EG9izJIn2IQDHoLFUhuyKH-H6CzX18HzlydM5kaWJYEfByXCHS4Ww_MBqj_dn8O_DKevULdF-XQs6QpSHctKS5TV-cCdxqPerZVq-G5O2p-YY20IdkaDay_6R8YlADTaBJv4nKAcZb7HpzejDkwQ_MSX78EMPAgk8pnD7WO9UFfc2ypZLcID9gm1NHGAegU5-SweXR0SW_Vis1Ptg2XzofM4DPsqY-QGlFYDmYpZDE distservices-docker-release.repo.openearth.io/distarch/dpcli-tiger3:3.1
+
+
+2.use pod with sqlcmd
+kubectl exec -it mssql -n dspdm-dev bash
+
+3.access dfs db
+sqlcmd -S 10.126.45.27,1434 -U sa -P Landmark1 -d dfs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================================================
+copy user block to P7 docker
+
+
+1. enter pseven container
+>>>export TOKEN3='eyJhbGciOiJSUzI1NiIsImtpZCI6IlZSRnBjVF9PN0d2bHB4M0JnVDdCVENWZnJCLTlqMXVSU1pmd1BQOHhrSkEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGZzLXRva2VuLWs3Ym16Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRmcyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijg4ZWY5NmQyLTE2NjMtNDI3MC04ODdmLTg3ZDY4YzM4NjJmMSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZnM6ZGZzIn0.H9A0XyiwcZH7T00Pc1rX3C1r_uCGH2W_sA8wB5355wm9g1QKvevQ-h4vxTk8i2G5KC6KW6CZlUP4q90zac0abEd3fOfkNWzZ4n-a2HWareqvN6npezHLA68Qy6DCDqYJ-s4KMOQhte0YbYVIRUI8-eORTVclqy-fi0JEkIj-3r2cc7xyBMxDWMeOjiBEfoTowhi0iReeAd3FOGKVn7CAe5TgP7OZc8swbNtWkwhX6QAb7rN1oQqXIfwhK5BHGcLnTnCqOaL0qsdGuh3za8Nt19xGHbyFIX4W7n9Iwsb7_ztdjlF0ZMA-uFbh-hIrV9NnIxT4syWVhaFui1FvcdNOuy4CKP0HJQ1JAC4CKC8tXa0DCzbCcvXOmSsxXrG2N8UFvUKRgW4HCC6i8o9hrYyfLZLuz7P5-3shFvOUQjWxDNDLhWgzqUNyPXfi87oKGMLsRXIq0cz3_1hBLLmY_hVAKgG5Vdo6BFzLTL1bahlS_jZS2zMBJCiPjy5ijEjUnTeyw9uZEgrGVnoYbFbWOStyUA-w0MDuXQx1lMEAI9xGQrgnxLLL-7nwv_Y47hT9MkS63xed0wzF0_ItCxwDNqeBqnXH7SUB3xGIbqxcVv-mNp-KUbeGwj2qt8SQ0Brxu-jVS6QWjpzzXMbRAHDRdPFpSF_r4ctTPbwi5gOUqdVTCn0'
+
+>>>docker run -it --rm  -v $(pwd):/root/app -e TOKEN=$TOKEN3  distservices-docker-release.repo.openearth.io/distarch/dpcli-tiger3:3.1
+
+
+2. list running dockers
+>>>kubectl get po -n dfs-dev
+
+3. enter p7 manager docker
+>>>kubectl exec -it dev-p7manager-74dbbf6447-gk4fj -n dfs-dev bash
+
+4. list env
+>>>env |grep PSE
+
+5. pass ssh
+>>>ssh dfsadmin@10.126.45.26
+>>>yes
+>>>password:Landmark1
+
+6. back to C:\
+>>>cd \
+>>>dir
+
+7. exit
+
+8. copy file from centos
+>>>kubectl cp a.txt dev-p7manager-74dbbf6447-gk4fj:/ -n dfs-dev
+>>>kubectl exec -it dev-p7manager-74dbbf6447-gk4fj -n dfs-dev bash
+
+9. copy file pass ssh
+>>>scp /a.txt dfsadmin@10.126.45.26:/c:/
+>>>password:Landmark1
+
+10. cd \
+11. dir
+12 copy a.txt file to folder
+>>>copy a.txt pSeven-6.16.3
+
+
+11. uzip 
+>>>"Program Files\7-Zip\7z.exe" x -y userblocks.zip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
