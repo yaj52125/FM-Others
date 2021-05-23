@@ -1,3 +1,15 @@
+
+==========================
+credential manager
+==========================
+
+
+    # user = 'buffalo'
+    # pwd = '3AOti5DAcRfPwo8m'
+
+
+
+
 https://ipecho.net/plain =  114.143.221.82
 
 User:   phoenix\dfsadmin
@@ -126,7 +138,7 @@ open user_block.py edit python
 connection postgres
 ------------------
 
-1.
+1.dfs docker
 
 docker run -it --rm  -v $(pwd):/root/app -e TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IlZSRnBjVF9PN0d2bHB4M0JnVDdCVENWZnJCLTlqMXVSU1pmd1BQOHhrSkEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGZzLXRva2VuLWs3Ym16Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRmcyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijg4ZWY5NmQyLTE2NjMtNDI3MC04ODdmLTg3ZDY4YzM4NjJmMSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZnM6ZGZzIn0.H9A0XyiwcZH7T00Pc1rX3C1r_uCGH2W_sA8wB5355wm9g1QKvevQ-h4vxTk8i2G5KC6KW6CZlUP4q90zac0abEd3fOfkNWzZ4n-a2HWareqvN6npezHLA68Qy6DCDqYJ-s4KMOQhte0YbYVIRUI8-eORTVclqy-fi0JEkIj-3r2cc7xyBMxDWMeOjiBEfoTowhi0iReeAd3FOGKVn7CAe5TgP7OZc8swbNtWkwhX6QAb7rN1oQqXIfwhK5BHGcLnTnCqOaL0qsdGuh3za8Nt19xGHbyFIX4W7n9Iwsb7_ztdjlF0ZMA-uFbh-hIrV9NnIxT4syWVhaFui1FvcdNOuy4CKP0HJQ1JAC4CKC8tXa0DCzbCcvXOmSsxXrG2N8UFvUKRgW4HCC6i8o9hrYyfLZLuz7P5-3shFvOUQjWxDNDLhWgzqUNyPXfi87oKGMLsRXIq0cz3_1hBLLmY_hVAKgG5Vdo6BFzLTL1bahlS_jZS2zMBJCiPjy5ijEjUnTeyw9uZEgrGVnoYbFbWOStyUA-w0MDuXQx1lMEAI9xGQrgnxLLL-7nwv_Y47hT9MkS63xed0wzF0_ItCxwDNqeBqnXH7SUB3xGIbqxcVv-mNp-KUbeGwj2qt8SQ0Brxu-jVS6QWjpzzXMbRAHDRdPFpSF_r4ctTPbwi5gOUqdVTCn0 distservices-docker-release.repo.openearth.io/distarch/dpcli-tiger3:3.1
 
@@ -141,9 +153,9 @@ password:postgres
 
 
 ========================================
-connect sql server
+connect sql server  
 
-1.open docker
+1.open docker  dspdm docker
 docker run -it --rm  -v $(pwd):/root/app -e TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IlZSRnBjVF9PN0d2bHB4M0JnVDdCVENWZnJCLTlqMXVSU1pmd1BQOHhrSkEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkc3BkbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkc3BkbS10b2tlbi14aGJtcyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJkc3BkbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImEzMjIzMGNhLWFhNGQtNDMzNC05YTNhLTQ4YzMzZmFkN2YwYiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkc3BkbTpkc3BkbSJ9.PWWb9eaeor5NKLi2jxyx90UOU1SBAzJKmz4iMRmUe2UXTs_D3CQuSaYoD-moe8izay4mY5IkfOw_C6sl1EJ-4sDoP4QIAEOy2maOD4wUo9P2obhf9FndDonyMq8m4Qwb28I4k_X_BrQyfWkowKgMY3fSNgj7Kbt5gU_x7xm7kHrSh5UwfkycPW0e3WKHYAXZ6F9HfDEXYH9KAgBQLfvDQLlKil3UXBe3ltBpScAZIHtw5LDhSUURirKMcG5soRD3jJVFJy_Xq9qu8qScKcNH3gVXL3S9udoJ_F1bAgHmgR1h3q_1eCRfLAccxRVx8IotG__Osj58ViWIVuG5llRv1PzNFyvMxbqCJjjP1_yaD9VM75jS7Ja89Wv5wd15t3D_HqEHp__Qmsp-tOwkkmJkvyK_fa88-hwDjrfN1m9y_L87tWDLK1DIuA5-8KmNWrxe1EG9izJIn2IQDHoLFUhuyKH-H6CzX18HzlydM5kaWJYEfByXCHS4Ww_MBqj_dn8O_DKevULdF-XQs6QpSHctKS5TV-cCdxqPerZVq-G5O2p-YY20IdkaDay_6R8YlADTaBJv4nKAcZb7HpzejDkwQ_MSX78EMPAgk8pnD7WO9UFfc2ypZLcID9gm1NHGAegU5-SweXR0SW_Vis1Ptg2XzofM4DPsqY-QGlFYDmYpZDE distservices-docker-release.repo.openearth.io/distarch/dpcli-tiger3:3.1
 
 
@@ -152,21 +164,6 @@ kubectl exec -it mssql -n dspdm-dev bash
 
 3.access dfs db
 sqlcmd -S 10.126.45.27,1434 -U sa -P Landmark1 -d dfs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -213,14 +210,32 @@ copy user block to P7 docker
 12 copy a.txt file to folder
 >>>copy a.txt pSeven-6.16.3
 
+copy folder
+>>>xcopy d:mp3 e:mp3 /s/e/i/y
 
 11. uzip 
 >>>"Program Files\7-Zip\7z.exe" x -y userblocks.zip
 
 
 
+kubectl get namespace
+kubectl logs -n dfs-dev -c modelmanager dev-modelmanager-7dbb495747-7b9rx
+kubectl exec -it dev-modelmanager-7dbb495747-7b9rx -n dfs-dev bash
+kubectl describe pods -n dfs-dev
+kubectl get secret -n plat-system
+kubectl get vs -n dsis-system
+
+"c:\Program Files\DATADVANCE\pSeven-6.16.3\p7server" --port=8888 --home="C:\Users\H209982\Desktop\Test\p7share"
+cacls C:\Users\H209982\Desktop\Test\p7share /t /e /c /g p7_001:c
 
 
+
+
+
+
+============================================
+export TOKEN4='eyJhbGciOiJSUzI1NiIsImtpZCI6IktRdnZTcTZtWkNuTWwybDV4SFV1ZGxnZVBxMjJJX2c0c2RGa0FJWHIzTFkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGZzLXRva2VuLWhqcDQ5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRmcyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImIwYmQ5ZjQ0LTg5ODgtNDA3Yi04NjY2LTQ5ODkxOGJlOGJiOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZnM6ZGZzIn0.SThn1I8uc-PYhrw38kVz-lzRpBR33ftWJeFIwQBg7_HrkuZVXtld6XS_q-YA0znMAaGLCmBnnh0pddYIOTdHCir41FiFv8PYQNxJwyXpawT-irrpcc1fk1yRHYK_QjIjFcnjkcNeSQdf7j8cJmEbuy8kGkKzN_h9ZezdeKHhzYt1rOsTaWg7lLqH_00cXANpSDiZut3ztvIQC6E1aZFmLzJlqL0-ercm833sAqkhAii1Kdy_bM4NXFf0g5DtmvCrRno3PPUnhbZOrdQ9tWiotpbhtNm0MzK95-WAa2YbX6rw-1Lqiw-dUyIAPnMtOZKgj9LC-6nB0PsCsnlcKejOAGasLBbJTkBKt51rAFsaxTpEdj-qaM8K-wuHBhGy_i0D3wopGvTRTAssZ3N9jlvASZq_2dCxBiRH6i75BFPPoqPI1hG_khnThfNTAKaMEm5MoB-VzSa-rXOS-hAMTR7RQkXz28LtY9az0nuQykEgxgGm2l_v-5zoSe6Bye4GMkHQJkxw26zYRfFNJnfOy03GbPPT56OZW4xO-n8x5_XI5XCQy4nnm2AU6aJrj4Uv8dsyaIUmpX-IKXrKrBPNfRJlPIZ_8R63Zqn1HGBz7s41Nb8p1CLIL2ohLzvtSkqzBD47X9KeGNMj13qGIMA_72g22moBIYXzPbtcpkBKXDvUXoQ'
+docker run -it --rm  -v $(pwd):/root/app -e TOKEN=$TOKEN4  distplat-docker-milestone.hub.ienergycloud.io/distarch/dpcli-tiger4:4.0-dev
 
 
 
